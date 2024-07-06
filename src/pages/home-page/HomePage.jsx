@@ -11,29 +11,31 @@ import styles from "./HomePage.module.scss";
 function HomePage() {
   return (
     <>
-      <Header />
-      <div className={styles.content}>
-        <h1>Home page</h1>
-        <div id="about">
-          <HomeAboutPart />
-        </div>
-        <div id="interested">
-          <HomeInterestedPart />
-        </div>
-        <div id="skills">
-          <HomeSkillsPart />
-        </div>
-        <div id="education">
-          <HomeEducationPart />
-        </div>
-        <div id="work-experience">
-          <HomeWorkExpPart />
-        </div>
-        <div id="languages">
-          <HomeLanguagesPart />
-        </div>
-        <div id="contact">
-          <HomeContactPart />
+      <div className={styles.page}>
+        <Header />
+        <div className={styles.content}>
+          <div id="about">
+            <HomeAboutPart />
+          </div>
+          <div id="interested">
+            <HomeInterestedPart />
+          </div>
+          <div id="skills">
+            <HomeSkillsPart />
+          </div>
+          {/* Add section for current/completed projects */}
+          <div id="education">
+            <HomeEducationPart />
+          </div>
+          <div id="work-experience">
+            <HomeWorkExpPart />
+          </div>
+          <div id="languages">
+            <HomeLanguagesPart />
+          </div>
+          <div id="contact">
+            <HomeContactPart />
+          </div>
         </div>
       </div>
     </>

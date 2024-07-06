@@ -1,8 +1,19 @@
-// HomePage.module.scss
+@import "../../styles/Variables.module.scss";
 
-.content {
-  margin-top: 60px; // Turėtų būti bent header aukštis
-  padding: 20px;
+.page {
+  font-family: $primaryFontStyle;
+}
+
+h1 {
+  font-size: $primaryH1FontSize;
+}
+
+h2 {
+  font-size: $primaryH2FontSize;
+}
+
+h3 {
+  font-size: $primaryH3FontSize;
 }
 
 .frame {
@@ -10,4 +21,21 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 20px 0;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.aboutText {
+  flex: 1;
 }

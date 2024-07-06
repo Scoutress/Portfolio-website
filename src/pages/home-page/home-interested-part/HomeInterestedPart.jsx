@@ -11,7 +11,9 @@ function HomeInterestedPart() {
           <li>Java Back-End Web developer (Junior/Intern)</li>
           <li>Full-Stack Web developer (Junior/Intern)</li>
         </ul>
-        <button>Contact me</button>
+        <button>
+          <a href="#contact">Contact me</a>
+        </button>
       </div>
     </>
   );
