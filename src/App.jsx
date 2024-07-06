@@ -1,11 +1,8 @@
-function App() {
-  return (
-    <>
-      <div>
-        <h1>hello world</h1>
-      </div>
-    </>
-  );
-}
+import { RouterProvider } from "react-router-dom";
+import Router from "./navigation/Router";
+
+const App = () => {
+  return <RouterProvider router={Router} />;
+};
 
 export default App;
