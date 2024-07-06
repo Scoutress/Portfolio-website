@@ -5,12 +5,14 @@ import HomeInterestedPart from "./home-interested-part/HomeInterestedPart";
 import HomeLanguagesPart from "./home-languages-part/HomeLanguagesPart";
 import HomeSkillsPart from "./home-skills-part/HomeSkillsPart";
 import HomeWorkExpPart from "./home-work-exp-part/HomeWorkExpPart";
+import Header from "../../components/header/Header";
 import styles from "./HomePage.module.scss";
 
 function HomePage() {
   return (
     <>
-      <div className={styles.frame}>
+      <Header />
+      <div className={styles.content}>
         <h1>Home page</h1>
         <div id="about">
           <HomeAboutPart />
@@ -24,7 +26,7 @@ function HomePage() {
         <div id="education">
           <HomeEducationPart />
         </div>
-        <div id="work-exp">
+        <div id="work-experience">
           <HomeWorkExpPart />
         </div>
         <div id="languages">

@@ -2,12 +2,24 @@ function HeaderButtons() {
   return (
     <>
       <div>
-        <button>About</button>
-        <button>Skills</button>
-        <button>Education</button>
-        <button>Work Experience</button>
-        <button>Languages</button>
-        <button>Contact</button>
+        <button>
+          <a href="#about">About</a>
+        </button>
+        <button>
+          <a href="#skills">Skills</a>
+        </button>
+        <button>
+          <a href="#education">Education</a>
+        </button>
+        <button>
+          <a href="#work-exp">Work Experience</a>
+        </button>
+        <button>
+          <a href="#languages">Languages</a>
+        </button>
+        <button>
+          <a href="#contact">Contact me</a>
+        </button>
       </div>
     </>
   );

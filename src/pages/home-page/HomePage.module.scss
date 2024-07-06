@@ -1,4 +1,13 @@
+// HomePage.module.scss
+
+.content {
+  margin-top: 60px; // Turėtų būti bent header aukštis
+  padding: 20px;
+}
+
 .frame {
-  border: 2px dashed rgb(0, 0, 0); /* Temporary */
-  padding: 10px; /* Temporary */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
 }

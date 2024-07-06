@@ -1,0 +1,24 @@
+// Header.module.scss
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; // Arba kita spalva, priklausomai nuo dizaino
+  z-index: 1000; // Užtikrina, kad header būtų virš kitų elementų
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Šešėlis, kad header atrodytų iškilęs
+  padding: 10px 0;
+}
+
+.header button {
+  margin: 0 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
