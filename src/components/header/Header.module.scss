@@ -1,15 +1,25 @@
 .header {
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header button {
   margin: 0 10px;
+  padding: clamp(2px, 1vw, 10px);
 }
 
 .header a {

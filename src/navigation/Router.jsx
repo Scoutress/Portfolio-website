@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import ErrorPage from "../pages/ErrorPage";
 import Routes from "./Routes";
-import Root from "./Root";
+import Root from "./root/Root";
 import HomePage from "../pages/home-page/HomePage";
 
 const Router = createBrowserRouter([

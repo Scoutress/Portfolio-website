@@ -4,38 +4,18 @@
   font-family: $primaryFontStyle;
 }
 
-h1 {
-  font-size: $primaryH1FontSize;
-}
-
-h2 {
-  font-size: $primaryH2FontSize;
-}
-
-h3 {
-  font-size: $primaryH3FontSize;
-}
-
-.frame {
+.content {
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.aboutContainer {
-  display: flex;
-  align-items: center;
+.section {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-top: 50px;
 }
 
-.profileImage {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-right: 20px;
-  object-fit: cover;
-}
-
-.aboutText {
-  flex: 1;
+html {
+  scroll-behavior: smooth;
 }

@@ -6,16 +6,18 @@ function HomeSkillsPart() {
       <div className={styles.frame}>
         <h1>Skills & Technologies</h1>
         <ul>
-          <h2>Front-End technologies & frameworks</h2>
-          <li>HTML</li>
-          <li>CSS</li>
+          <h2>Programming languages</h2>
+          <li>Java</li>
           <li>JavaScript</li>
-          <li>React.js</li>
-          <li>Vite</li>
         </ul>
         <ul>
-          <h2>Back-End technologies</h2>
-          <li>Java</li>
+          <h2>Web development</h2>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Vite</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
         </ul>
         <ul>
           <h2>Database technologies</h2>

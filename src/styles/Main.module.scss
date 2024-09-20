@@ -1,5 +1,9 @@
 @import "./Variables.module.scss";
 
-.h1 {
-  font-size: 200px;
+body {
+  background-color: $primaryBackgroundColor;
+  color: $primaryTextColor;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }

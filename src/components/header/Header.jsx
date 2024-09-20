@@ -4,7 +4,9 @@ import styles from "./Header.module.scss";
 function Header() {
   return (
     <div className={styles.header}>
-      <HeaderButtons />
+      <div className={styles.menu}>
+        <HeaderButtons />
+      </div>
     </div>
   );
 }

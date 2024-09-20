@@ -1,0 +1,26 @@
+@import "../../styles/Variables.module.scss";
+
+.button {
+  background-color: #132336;
+  align-items: center;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  color: $secondaryTextColor;
+  font-size: $primaryH3FontSize;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
