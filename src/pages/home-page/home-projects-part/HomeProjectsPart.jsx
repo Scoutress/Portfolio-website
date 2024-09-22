@@ -1,11 +1,11 @@
 import styles from "./HomeProjectsPart.module.scss";
-import tempPhotoOfProject1 from "/images/statistics-app-temp.png";
-import tempPhotoOfProject2 from "/images/conditions-of-newbie-admins.png";
+import photoOfProject1 from "/images/adminStatsPhoto.png";
+import photoOfProject2 from "/images/taskGenerator.png";
 import { useState } from "react";
 
 const projects = [
-  { id: 1, image: tempPhotoOfProject1, alt: "Project 1" },
-  { id: 2, image: tempPhotoOfProject2, alt: "Project 2" },
+  { id: 1, image: photoOfProject1, alt: "Project 1" },
+  { id: 2, image: photoOfProject2, alt: "Project 2" },
 ];
 
 function HomeProjectsPart() {
