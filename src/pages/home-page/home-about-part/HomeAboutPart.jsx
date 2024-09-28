@@ -1,4 +1,4 @@
-import profileImage from "/images/sc-high-resolution-logo.png";
+import profileImage from "/images/PortraitPhoto.jpg";
 import styles from "./HomeAboutPart.module.scss";
 import UseDeviceType from "../../../hooks/UseDeviceType";
 
