@@ -4,7 +4,7 @@ const Routes = {
     name: "HomePage",
   },
   projectDetailsPage: {
-    link: "/project",
+    link: "/project/:id",
     name: "ProjectDetailsPage",
   },
   errorPage: {

@@ -1,6 +1,16 @@
 @import "../../../styles/Variables.module.scss";
 
 .page {
-  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   font-family: $primaryFontStyle;
+}
+
+img {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
