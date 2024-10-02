@@ -1,13 +1,14 @@
 import styles from "./HomeProjectsPart.module.scss";
-import photoOfProject1 from "/images/adminStatsPhoto.png";
-import photoOfProject2 from "/images/taskGenerator.png";
-import photoOfProject3 from "/images/LogoipsumWebsitePhoto.png";
+import photoOfProject1 from "/images/AdminStatsPhoto.png";
+import photoOfProject2 from "/images/LogoipsumTestWebsite.png";
+import photoOfProject3 from "/images/RankupGeneratorExample.png";
 import { useState } from "react";
 
 const projects = [
   { id: 1, image: photoOfProject1, alt: "Project 1" },
   { id: 2, image: photoOfProject2, alt: "Project 2" },
   { id: 3, image: photoOfProject3, alt: "Project 3" },
+  // Should be 1850x800
 ];
 
 function HomeProjectsPart() {
