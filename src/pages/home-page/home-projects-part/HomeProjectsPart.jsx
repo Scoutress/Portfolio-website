@@ -3,6 +3,7 @@ import photoOfProject1 from "/images/adminStatsPhoto.png";
 import photoOfProject2 from "/images/LogoipsumTestWebsite.png";
 import photoOfProject3 from "/images/RankupGeneratorExample.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -29,15 +30,18 @@ const projects = [
 function HomeProjectsPart() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const navigate = useNavigate();
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + projects.length) % projects.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
+  };
+
+  const handleClick = (id) => {
+    navigate(`/project/${id}`);
   };
 
   return (
@@ -49,18 +53,15 @@ function HomeProjectsPart() {
             className={styles.slideContainer}
             onMouseEnter={() => setHoveredIndex(currentIndex)}
             onMouseLeave={() => setHoveredIndex(null)}
+            onClick={() => handleClick(projects[currentIndex].id)}
           >
             <img
               src={projects[currentIndex].image}
               alt={projects[currentIndex].alt}
-              className={`${styles.slide} ${
-                hoveredIndex === currentIndex ? styles.blur : ""
-              }`}
+              className={`${styles.slide} ${hoveredIndex === currentIndex ? styles.blur : ""}`}
             />
             {hoveredIndex === currentIndex && (
-              <div className={styles.description}>
-                {projects[currentIndex].description}
-              </div>
+              <div className={styles.description}>{projects[currentIndex].description}</div>
             )}
           </div>
         </div>
