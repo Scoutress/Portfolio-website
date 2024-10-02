@@ -3,6 +3,7 @@ import ErrorPage from "../pages/ErrorPage";
 import Routes from "./Routes";
 import Root from "./root/Root";
 import HomePage from "../pages/home-page/HomePage";
+import ProjectDetailsPage from "../pages/project-details-page/ProjectDetailsPage";
 
 const Router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const Router = createBrowserRouter([
       {
         path: Routes.homePage.link,
         element: <HomePage />,
+      },
+      {
+        path: Routes.projectDetailsPage.link,
+        element: <ProjectDetailsPage />,
       },
       {
         path: Routes.errorPage.link,

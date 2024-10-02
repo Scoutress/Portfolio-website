@@ -3,6 +3,10 @@ const Routes = {
     link: "/",
     name: "HomePage",
   },
+  projectDetailsPage: {
+    link: "/project",
+    name: "ProjectDetailsPage",
+  },
   errorPage: {
     link: "/*",
     name: "404",
