@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import DetailedProjectInfoPart from "./detailed-project-info-part/DetailedProjectInfoPart.jsx";
 import styles from "./ProjectDetailsPage.module.scss";
 import ProjectMediaPart from "./project-media-part/ProjectMediaPart.jsx";
@@ -7,6 +8,10 @@ import projectsData from "../../data/ProjectsData.js";
 function ProjectDetailsPage() {
   const { id } = useParams();
   const project = projectsData.find((project) => project.id === Number(id));
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!project) {
     return <div>Project not found</div>;
