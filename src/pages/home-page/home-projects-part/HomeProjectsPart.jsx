@@ -48,10 +48,7 @@ function HomeProjectsPart() {
             />
             {hoveredIndex === currentIndex && (
               <div className={styles.projectInfo}>
-                <div className={styles.title}>
-                  <strong>Title: </strong>
-                  {projects[currentIndex].title}
-                </div>
+                <div className={styles.title}>{projects[currentIndex].title}</div>
                 <div className={styles.status}>
                   <strong>Status: </strong>
                   {projects[currentIndex].status}
