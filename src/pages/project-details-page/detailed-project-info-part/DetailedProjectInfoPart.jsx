@@ -24,12 +24,7 @@ function DetailedProjectInfoPart({ project }) {
           <strong>Used technologies and languages: </strong>
           {project.technologies}
         </p>
-        <a
-          className={styles.description}
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className={styles.link} href={project.github} target="_blank" rel="noopener noreferrer">
           <strong>GitHub: </strong>
           {project.github}
         </a>
