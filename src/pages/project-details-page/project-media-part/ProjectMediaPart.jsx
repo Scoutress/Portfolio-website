@@ -5,7 +5,7 @@ function ProjectMediaPart({ project }) {
   return (
     <div className={styles.page}>
       <div className={styles.content}>
-        <img src={project.media} alt={`${project.name} screenshot`} />
+        {project.media && <img src={project.media} alt={`${project.name} screenshot`} />}
       </div>
     </div>
   );
