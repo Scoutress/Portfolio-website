@@ -3,14 +3,14 @@ const projectsData = [
     id: 1,
     name: "Administration Statistics for Minecraft server",
     description1:
-      "This is a project I came up with myself, which I have been developing for about a year and a half. " +
-      "I first created it in MS Excel, then recreated it in Google Sheets, and now I'm slowly working on " +
-      "creating a fully functional project with a Java application.",
-    description2:
       "The goal of this project is to collect " +
       "statistical data about each member of the administration, analyze them and, with the help of certain " +
       "algorithms, calculate the percentages of how well the administrator does his job. The result is presented " +
       "as a percentage value and a recommendation for promotion/demotion.",
+    description2:
+      "This is a project I came up with myself, which I have been developing for about a year and a half. " +
+      "I first created it in MS Excel, then recreated it in Google Sheets, and now I'm slowly working on " +
+      "creating a fully functional project with a Java application.",
     description3:
       "Currently, data is collected manually, but it is planned to implement automatic data transfer from Minecraft " +
       "servers and other sources. The project is intended for personal use.",
@@ -78,7 +78,7 @@ const projectsData = [
     deploying: "Not deployed",
     technologies: "Java Spring Boot, MySQL, Thymeleaf",
     github: "https://github.com/Scoutress/CodeAcademy-Final-Project",
-    media: "",
+    media: "/images/CookingCostPage.png",
   },
 ];
 

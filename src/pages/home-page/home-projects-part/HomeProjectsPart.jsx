@@ -1,31 +1,17 @@
 import styles from "./HomeProjectsPart.module.scss";
-import photoOfProject1 from "/images/adminStatsPhoto.png";
-import photoOfProject2 from "/images/LogoipsumTestWebsite.png";
-import photoOfProject3 from "/images/RankupGeneratorExample.png";
+import projectsData from "./../../../data/ProjectsData";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const projects = [
-  {
-    id: 1,
-    image: photoOfProject1,
-    alt: "Project 1",
-    description: "Description for Project 1",
-  },
-  {
-    id: 2,
-    image: photoOfProject2,
-    alt: "Project 2",
-    description: "Description for Project 2",
-  },
-  {
-    id: 3,
-    image: photoOfProject3,
-    alt: "Project 3",
-    description: "Description for Project 3",
-  },
-  // Should be 1850x800
-];
+const projects = projectsData.map((project) => ({
+  id: project.id,
+  title: project.name,
+  image: project.media, // Should be 1850x800
+  alt: project.name,
+  status: project.status,
+  technologies: project.technologies,
+  description: project.description1,
+}));
 
 function HomeProjectsPart() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,7 +47,24 @@ function HomeProjectsPart() {
               className={`${styles.slide} ${hoveredIndex === currentIndex ? styles.blur : ""}`}
             />
             {hoveredIndex === currentIndex && (
-              <div className={styles.description}>{projects[currentIndex].description}</div>
+              <div className={styles.projectInfo}>
+                <div className={styles.title}>
+                  <strong>Title: </strong>
+                  {projects[currentIndex].title}
+                </div>
+                <div className={styles.status}>
+                  <strong>Status: </strong>
+                  {projects[currentIndex].status}
+                </div>
+                <div className={styles.description}>{projects[currentIndex].description}</div>
+                <div className={styles.technologies}>
+                  <strong>Technologies: </strong>
+                  {projects[currentIndex].technologies}
+                </div>
+                <div>
+                  <strong>Press</strong> for more info
+                </div>
+              </div>
             )}
           </div>
         </div>
